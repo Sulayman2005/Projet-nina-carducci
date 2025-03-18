@@ -16,6 +16,25 @@
     <script src="./assets/bootstrap/bootstrap.bundle.min.js" defer></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous" defer></script>
     <title>Nina Carducci - Photographe Professionnelle à Bordeaux</title>
+    <script type="application/ld+json">
+    	{
+        	"@context": "https://schema.org",
+            "@type": "Localbusiness",
+            "name": "Nina Carducci",
+            "address": {
+            	"@type": "PostalAddress",
+                "streetAddress": "68 avenue Alsace-Lorraine",
+                "postalCode": "33200",
+                "addressCountry": "FR"
+            },
+            "telephone": "+33 5 56 67 78 89",
+            "openingHoursSpecification": {
+            	"dayofweek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+                "opens": "10:00",
+                "closes": "19:00"
+            }
+        },
+    </script>
 </head>
 <body>
     <header class="top-header">
@@ -35,61 +54,62 @@
         </nav>
     </header>
     <main>
-          <section id="header">
+        <section id="header">
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <picture>
+                        <source srcset="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-480.webp"
+                            media="(max-width: 480px)">
+                        <source srcset="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-768.webp"
+                            media="(max-width: 768px)">
+                        <source srcset="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-1024.webp"
+                            media="(max-width: 1024px)">
+                        <img src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-1920.webp"
+                            class="d-block w-100" alt="Ryoji Iwata" width="1920" height="888">
+                    </picture>
                 </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <picture>
-                            <source srcset="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-480.webp" 
-                                media="(max-width: 480px)">
-                            <source srcset="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-768.webp" 
-                                media="(max-width: 768px)">
-                            <source srcset="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-1024.webp" 
-                                media="(max-width: 1024px)">
-                            <img src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-1920.webp"
-                                 class="d-block w-100" alt="Ryoji Iwata" width="1920" height="888">
-                        </picture>
-                    </div>
-                    <div class="carousel-item">
-                        <picture>
-                            <source srcset="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash-480.webp"
-                                media="(max-width: 480px)">
-                            <source srcset="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash-768.webp"
-                                media="(max-width: 768px)">
-                            <source srcset="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash-1024.webp"
-                                media="(max-width: 1024px)">
-                            <img src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash-1920.webp"
-                                class="d-block w-100" alt="Nicholas Green" loading="lazy" width="1920" height="888">
-                        </picture>
-                    </div>
-                    <div class="carousel-item">
-                        <picture>
-                            <source srcset="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash-480.webp"
-                                media="(max-width: 480px)">
-                            <source srcset="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash-768.webp"
-                                media="(max-width: 768px)">
-                            <source srcset="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash-1024.webp"
-                                media="(max-width: 1024px)">
-                            <img src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash-1920.webp"
-                                class="d-block w-100" alt="Edward Cisneros" loading="lazy">
-                        </picture>
-                    </div>
+                <div class="carousel-item">
+                    <picture>
+                        <source srcset="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash-480.webp"
+                            media="(max-width: 480px)">
+                        <source srcset="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash-768.webp"
+                            media="(max-width: 768px)">
+                        <source srcset="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash-1024.webp"
+                            media="(max-width: 1024px)">
+                        <img src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash-1920.webp"
+                            class="d-block w-100" alt="Nicholas Green"  width="1920" height="888" loading="lazy">
+                    </picture>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Précédent</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Suivant</span>
-                </button>
+                <div class="carousel-item">
+                    <picture>
+                        <source srcset="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash-480.webp"
+                            media="(max-width: 480px)">
+                        <source srcset="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash-768.webp"
+                            media="(max-width: 768px)">
+                        <source srcset="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash-1024.webp"
+                            media="(max-width: 1024px)">
+                        <img src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash-1920.webp"
+                            class="d-block w-100" alt="Edward Cisneros" loading="lazy">
+                    </picture>
+                </div>
             </div>
-        </section>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Précédent</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Suivant</span>
+              </button>
+            </div>
+          </section>
         <section id="about">
             <div class="picture left">
                 <img src="./assets/images/nina.webp"  width="374px" height="329px" alt="Nina Carducci, photographe professionnelle à Bordeaux" title="Nina Carducci">
