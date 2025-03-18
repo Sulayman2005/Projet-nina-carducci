@@ -23,6 +23,11 @@
 	<meta property="og:url" content="https://sulayman2005.github.io/Projet-nina-carducci/">
 	<meta property="og:image" content="https://raw.githubusercontent.com/sulayman2005/Nina-Carducci/assets/images/nina.webp">
 	<meta property="og:description" content="Nina Carducci, photographe professionnelle basée à Bordeaux, vous propose l'opportunité de saisir ces merveilleux moments d'une vie.">
+    <!-- preload for the first image slider  -->
+    <link rel="preload" as="image" href="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-480.webp" media="(max-width: 480px)">
+    <link rel="preload" as="image" href="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-768.webp" media="(max-width: 768px)">
+    <link rel="preload" as="image" href="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-1024.webp" media="(max-width: 1024px)">
+    <link rel="preload" as="image" href="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-1920.webp" media="(min-width: 1025px)">
     <!--  script.js  -->
     <script src="./assets/bootstrap/bootstrap.bundle.min.js" defer></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous" defer></script>
@@ -79,18 +84,18 @@
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
               </div>
               
-            <div class="carousel-inner">
+              <div class="carousel-inner">
                 <div class="carousel-item active">
                     <picture>
-						<source srcset="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-480.webp"
-							media="(max-width: 480px)">
-						<source srcset="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-768.webp"
-							media="(max-width: 768px)">
-						<source srcset="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-1024.webp"
-							media="(max-width: 1024px)">
-						<img src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-1920.webp"
-							class="d-block w-100" alt="Ryoji Iwata" width="1920" height="888">
-					</picture>
+                        <source srcset="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-480.webp"
+                            media="(max-width: 480px)">
+                        <source srcset="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-768.webp"
+                            media="(max-width: 768px)">
+                        <source srcset="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-1024.webp"
+                            media="(max-width: 1024px)">
+                        <img src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-1920.webp"
+                            class="d-block w-100" alt="Ryoji Iwata" width="1920" height="1080" fetchpriority="high">
+                    </picture>
                 </div>
                 <div class="carousel-item">
                     <picture>
@@ -101,7 +106,7 @@
                         <source srcset="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash-1024.webp"
                             media="(max-width: 1024px)">
                         <img src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash-1920.webp"
-                            class="d-block w-100" alt="Nicholas Green"  width="1920" height="888" loading="lazy">
+                            class="d-block w-100" alt="Nicholas Green" width="1920" height="888" loading="lazy">
                     </picture>
                 </div>
                 <div class="carousel-item">
@@ -129,7 +134,7 @@
           </section>
         <section id="about">
             <div class="picture left">
-                <img src="./assets/images/nina.webp"  width="374px" height="329px" alt="Nina Carducci, photographe professionnelle à Bordeaux" title="Nina Carducci">
+                <img src="./assets/images/nina.webp"  width="374px" height="329px" alt="Nina Carducci, photographe professionnelle à Bordeaux" title="Nina Carducci" loading="lazy">
             </div>
             <div id="about-me">
                 <h2 class="about-me__title">À propos de moi</h2>
@@ -279,7 +284,7 @@
                 </div>
             </div>
             <div class="picture right">
-                <img class="camera_img" loading="lazy" src="./assets/images/camera.webp" width="418" height="417" alt="Photographie caméra vintage" title="Photo caméra">
+                <img class="camera_img" loading="lazy" src="./assets/images/camera.webp" width="418" height="417" alt="Photographie caméra vintage" title="Photo caméra" loading="lazy">
             </div>
         </div>
     </footer>
