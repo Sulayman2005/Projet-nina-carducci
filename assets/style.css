@@ -1,14 +1,15 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap");
-
+/* Import des polices via <link> dans le HTML */
 * {
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-style: normal;
   object-fit: cover;
 }
+
 body {
   max-width: 1920px;
   margin: auto;
 }
+
 img {
   max-width: 100%;
   height: auto;
@@ -78,21 +79,25 @@ img {
 .picture img {
   width: 100%;
 }
+
 #about-me {
   flex: 2;
 }
+
 .about-me__title {
   margin-top: 1em;
   margin-bottom: 60px;
   font-size: 30px;
 }
+
 .about-me__introduction {
   font-size: 16px;
-  font-family: "Spectral";
+  font-family: "Spectral", serif;
   font-weight: 800;
   font-style: italic;
   width: 80%;
 }
+
 #about-me p {
   width: 80%;
   font-size: 14px;
@@ -102,28 +107,34 @@ img {
   text-align: center;
   padding-block: 2em;
 }
+
 .gallery .nav {
   justify-content: center;
 }
+
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   color: #000;
   background-color: #beb45a;
 }
+
 .nav-pills .nav-link {
   color: #000;
   cursor: pointer;
 }
+
 .item-column {
   position: relative;
   margin-bottom: 0 !important;
   padding: 0;
 }
+
 .item-column::after {
   content: "";
   display: block;
   padding-bottom: 100%;
 }
+
 .gallery-item {
   position: absolute;
   width: 100%;
@@ -131,6 +142,7 @@ img {
   object-fit: cover;
   padding: 0.5em;
 }
+
 .mg-prev,
 .mg-next {
   width: 30px;
@@ -142,19 +154,21 @@ img {
 }
 
 .quote {
-  font-family: "Spectral";
+  font-family: "Spectral", serif;
   font-style: italic;
   width: 70%;
   margin: auto;
   padding-block: 3em;
 }
+
 .quote__text {
-  font-family: Spectral;
+  font-family: "Spectral", serif;
   font-style: italic;
   font-weight: 300;
 }
+
 .quote__author {
-  font-family: Spectral;
+  font-family: "Spectral", serif;
   font-weight: 800;
   font-size: 22px;
 }
@@ -164,6 +178,7 @@ img {
   background-color: #a8d5d8;
   position: relative;
 }
+
 #services .container::before {
   content: " ";
   background-color: #1c6474;
@@ -204,6 +219,7 @@ img {
 #contact .container {
   display: flex;
 }
+
 .picture.right::before {
   content: " ";
   background-color: #beb45a;
@@ -214,9 +230,11 @@ img {
   right: 0;
   z-index: -1;
 }
+
 .form-container {
   flex: 2;
 }
+
 form {
   display: flex;
   flex-direction: column;
@@ -241,10 +259,12 @@ form textarea {
   font-size: 1.2em;
   margin-bottom: 20px;
 }
+
 input[type="submit"] {
   background-color: #beb45a;
   padding: 0.5em 1em;
 }
+
 footer {
   background-color: #5f5826;
   color: black;
